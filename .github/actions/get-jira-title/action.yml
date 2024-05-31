@@ -1,4 +1,3 @@
-yaml
 name: 'Get JIRA Ticket Title'
 description: 'Get the JIRA ticket title from the JIRA API'
 inputs:
