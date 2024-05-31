@@ -4,6 +4,7 @@ const axios = require('axios');
 
 async function run() {
   try {
+
     const jiraTicket = core.getInput('jira_ticket');
     const jiraBaseUrl = core.getInput('jira_base_url');
     const jiraApiToken = core.getInput('jira_api_token');
