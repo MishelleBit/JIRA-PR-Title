@@ -1,11 +1,17 @@
 name: 'Get JIRA Ticket Title'
 description: 'Get the JIRA ticket title from the JIRA API'
 inputs:
-  jira_base_url: ${{ secrets.JIRA_BASE_URL }}
-  jira_api_token: ${{ secrets.JIRA_API_TOKEN }}
-  jira_email: ${{ secrets.JIRA_EMAIL }}
   jira_ticket:
     description: 'The JIRA ticket ID'
+    required: true
+  jira_base_url:
+    description: 'The base URL of the JIRA instance'
+    required: true
+  jira_api_token:
+    description: 'The JIRA API token'
+    required: true
+  jira_email:
+    description: 'The email associated with the JIRA account'
     required: true
 outputs:
   jira_title:
