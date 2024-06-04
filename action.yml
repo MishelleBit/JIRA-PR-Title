@@ -1,6 +1,9 @@
 name: 'Get JIRA Ticket Title'
 description: 'Get the JIRA ticket title from the JIRA API'
 inputs:
+  jira_base_url: ${{ secrets.JIRA_BASE_URL }}
+  jira_api_token: ${{ secrets.JIRA_API_TOKEN }}
+  jira_email: ${{ secrets.JIRA_EMAIL }}
   jira_ticket:
     description: 'The JIRA ticket ID'
     required: true
